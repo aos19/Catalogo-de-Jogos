@@ -27,6 +27,11 @@ public class Game {
     @Column(columnDefinition = "TEXT")
     private String longDescription;
 
+    // Construtor vazio (evitar erro do Hibernate)
+    public Game () {
+
+    }
+
     // Construtor
     public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
