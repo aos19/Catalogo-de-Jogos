@@ -1,6 +1,6 @@
 package com.stopajogos.dslist.dto;
 
-import com.stopajogos.dslist.Game;
+import com.stopajogos.dslist.entities.Game;
 
 public class GameMinDTO {
     private Long id;

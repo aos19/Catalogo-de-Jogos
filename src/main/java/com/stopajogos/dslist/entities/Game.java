@@ -1,4 +1,4 @@
-package com.stopajogos.dslist;
+package com.stopajogos.dslist.entities;
 
 import jakarta.persistence.*;
 import java.util.Objects;

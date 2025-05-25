@@ -1,6 +1,5 @@
 package com.stopajogos.dslist.controllers;
 
-import com.stopajogos.dslist.Game;
 import com.stopajogos.dslist.dto.GameMinDTO;
 import com.stopajogos.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;

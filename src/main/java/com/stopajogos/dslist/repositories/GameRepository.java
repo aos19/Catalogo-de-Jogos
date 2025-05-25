@@ -1,6 +1,6 @@
 package com.stopajogos.dslist.repositories;
 
-import com.stopajogos.dslist.Game;
+import com.stopajogos.dslist.entities.Game;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 // Desenvolvendo a camada de acesso a dados
