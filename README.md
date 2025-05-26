@@ -5,7 +5,9 @@
 [![JPA](https://img.shields.io/badge/JPA-Specification-blue.svg)](https://jakarta.ee/specifications/persistence/)
 [![Maven](https://img.shields.io/badge/Maven-3.x-red.svg)](https://maven.apache.org/)
 [![H2 Database](https://img.shields.io/badge/H2%20Database-In--Memory-lightgrey.svg)](https://www.h2database.com/html/main.html)
-[![Build Status](https://img.shields.io/badge/Build-Passing-success.svg)](#) [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ## 🎮 Sobre o Projeto
+[![Build Status](https://img.shields.io/badge/Build-Passing-success.svg)](#) [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) 
+
+## 🎮 Sobre o Projeto
 
 Construção de um catálogo de games utilizando o framework Spring com Java. O objetivo é fornecer uma API RESTful que permita aos usuários visualizar informações sobre alguns jogos, organizados em listas. Este projeto serve como um estudo prático da utilização do Spring Boot para desenvolvimento de back-end, explorando conceitos como JPA para persistência de dados e REST para comunicação.
 
