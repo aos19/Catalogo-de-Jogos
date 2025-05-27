@@ -3,13 +3,11 @@ package com.stopajogos.dslist.controllers;
 import com.stopajogos.dslist.dto.GameDTO;
 import com.stopajogos.dslist.dto.GameListDTO;
 import com.stopajogos.dslist.dto.GameMinDTO;
+import com.stopajogos.dslist.dto.ReplacementDTO;
 import com.stopajogos.dslist.services.GameListService;
 import com.stopajogos.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,5 +36,11 @@ public class GameListController {
     public List<GameMinDTO> findGames(@PathVariable Long listId) {
         List<GameMinDTO> result = gameService.findByGameList(listId);
         return result;
+    }
+
+    // Definindo a opere1ção POST de mudança de posição de cada game na lista (arraste)
+    @PostMapping(value = "/{listId}/replacement")
+        public void move(@PathVariable Long listId, @RequestBody ReplacementDTO body) /* Pegando o corpo da requisição */{
+        gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
     }
 }
